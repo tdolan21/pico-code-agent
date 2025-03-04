@@ -1,0 +1,32 @@
+colors:
+  system_prefix: '\033[38;5;51m'
+  gold: '\033[38;5;220m'
+  message: '\033[38;5;255m'
+  reset: '\033[0m'
+  agent_prefix: '\033[38;5;99m'
+  user_text: '\033[38;5;255m'
+  arrow: '\033[38;5;99m>>>\033[0m'
+
+
+llm:
+  model: 'gpt-4o'
+  temperature: 0.4
+
+workspace:
+  output_dir: './workspace/'
+
+agent_prompts:
+  search_agent: |-
+    You can search the code repository by using search_code(query, max_results).
+    This will return snippets from code files in the codebase that match your query.
+  editor_agent: |-
+    You are a helpful assistant that can create and update code files and execute shell commands within the codebase directory.
+    You can:
+    - create_file(filename, content)
+    - update_file(filename, new_content, mode)
+    - edit_code_lines(filename, instructions)
+    - execute_shell_command(command)
+
+    Be careful that all shell commands should be safe and restricted to the codebase directory only.
+  analysis_agent: You analyze code search results or existing code files and suggest improvements.
+  completion_agent: You assess if the code meets user requirements and is complete.

@@ -1,0 +1,6 @@
+asyncio
+pydantic
+colorama
+python-dotenv
+llama-index==0.12.15
+llama-index-llms-openai==0.3.17
