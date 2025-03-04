@@ -4,7 +4,7 @@ This is a simple code writing agent that allows the user to control a workspace 
 
 ![demo](assets/demo.png)
 
-It uses OpenAI's advanced function calling capabilities along with a strong set of deterministic tools to be able to read and write codes with fairly high precision. Pinpointing small segments of code to have an LLM update it while understanding the full context is an ongoing challenge facing LLMs. 
+It uses OpenAI's advanced function calling capabilities along with a strong set of deterministic tools to be able to read and write code with fairly high precision. Pinpointing small segments of code to have an LLM update it while understanding the full context is an ongoing challenge facing LLMs. 
 
 This demo is my approach at simplifying this issue. 
 
