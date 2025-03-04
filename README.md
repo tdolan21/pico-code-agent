@@ -2,7 +2,7 @@
 
 This is a simple code writing agent that allows the user to control a workspace and live edit code with an LLM. 
 
-[demo](!assets/demo.png)
+![demo](assets/demo.png)
 
 It uses OpenAI's advanced function calling capabilities along with a strong set of deterministic tools to be able to read and write codes with fairly high precision. Pinpointing small segments of code to have an LLM update it while understanding the full context is an ongoing challenge facing LLMs. 
 
